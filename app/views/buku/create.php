@@ -5,23 +5,29 @@
     <title>Tambah Buku</title>
 </head>
 <body>
-    <h2>Tambah Buku</h2>
+    <div class="container">
+        <div class="toolbar">
+            <h2>Tambah Buku</h2>
+        </div>
 
-    <form method="post" action="index.php?page=buku&action=store">
-        <label>Kode Buku</label><br>
-        <input type="text" name="kode_buku" required><br><br>
+        <form method="post" action="index.php?page=buku&action=store">
+            <label>Kode Buku</label>
+            <input type="text" name="kode_buku" required>
 
-        <label>Judul</label><br>
-        <input type="text" name="judul" required><br><br>
+            <label>Judul</label>
+            <input type="text" name="judul" required>
 
-        <label>Penulis</label><br>
-        <input type="text" name="penulis" required><br><br>
+            <label>Penulis</label>
+            <input type="text" name="penulis" required>
 
-        <label>Tahun Terbit</label><br>
-        <input type="number" name="tahun_terbit" min="1000" max="2100" required><br><br>
+            <label>Tahun Terbit</label>
+            <input type="number" name="tahun_terbit" min="1000" max="2100" required>
 
-        <button type="submit">Simpan</button>
-        <a href="index.php?page=buku">Kembali</a>
-    </form>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <a href="index.php?page=buku" class="btn btn-secondary">Kembali</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
